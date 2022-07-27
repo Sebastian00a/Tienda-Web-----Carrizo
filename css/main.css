@@ -1,0 +1,200 @@
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 100px;
+  /*background: #2f3640;*/
+}
+
+body {
+  background-image: url(../img/istockphoto-1300208115-612x612.png);
+  background-attachment: fixed;
+  color: #fff;
+  font-family: monospace;
+}
+
+h1 h2 h3 h4 {
+  font-family: "Mulish", sans-serif;
+}
+
+table {
+  font-family: "Mulish", sans-serif;
+  font-size: 2rem;
+}
+
+form {
+  font-family: "Mulish", sans-serif;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+}
+
+nav ul li a:hover {
+  color: lightblue;
+  fornt-weight: 600;
+}
+
+article p {
+  font-family: "Mulish", cursive;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 10;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+h3 {
+  color: deeppink;
+  font-family: "Mulish", sans-serif;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+/*galeria*/
+.gallery {
+  width: auto;
+  height: 68vmin;
+  display: flex;
+  gap: 5px;
+}
+.gallery img {
+  height: 100%;
+  flex: 1;
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+.gallery img :hover {
+  flex: 4;
+}
+
+.gallery .gallery .gallery-conteiners {
+  display: grid;
+  grid-auto-rows: 150px;
+  padding: 20px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galery__tittle {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  /*background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 1);*/
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+@media (min-width: 700px) {
+  .gallery-conteiners {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*imagenes de juegos*/
+.contenedorG {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.contenedor-juegoss {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cardds {
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.cardds .textoss {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.banner {
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  /*width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;*/
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+}
+.banner ul {
+  list-style: none;
+}
+.banner ul li {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.boton {
+  background: #FFD600;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
