@@ -1,0 +1,55 @@
+//mixins
+
+@mixin texto( $fontSize , $lineHeight ,$color,$fontWeight){
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	font-weight: $fontWeight;
+	color: $color;
+	font-family: 'Mulish', cursive;
+	padding: 10px 20px;
+}
+
+
+
+article p{
+	@include texto(2em,2em,blue,10);
+}
+
+@mixin dis-flex($justify, $align,  $back, $borderRadius, $transtition , $backSize, $backPosi, $backRep){
+	display: dis-flex;
+	justify-content: $justify;
+	align-items: $align;
+
+	background-color: $back;
+	border-radius: $borderRadius;
+	transition: $transtition;
+	
+	background-size: $backSize;
+	background-position: $backPosi;
+	background-repeat: $backRep;
+
+	
+}
+
+.grid-item{
+	@include dis-flex(center, center,#03afff,4px,transform 0.3s ease-in-out,cover,center,no-repeat)
+}
+
+
+//maps
+
+$paleta:(
+	'one': #321830 ,
+	'two': #30132F,
+
+     
+
+);
+
+.bg-Form {
+	background-color: map-get($map:$paleta , $key:'one' );
+}
+
+.bg-morado{
+	background-color:map-get($map:$paleta , $key:'two' ) ;
+}

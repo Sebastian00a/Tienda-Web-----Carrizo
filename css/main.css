@@ -197,4 +197,33 @@ h3 {
   cursor: pointer;
 }
 
+article p {
+  font-size: 2em;
+  line-height: 2em;
+  font-weight: 10;
+  color: blue;
+  font-family: "Mulish", cursive;
+  padding: 10px 20px;
+}
+
+.grid-item {
+  display: dis-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-Form {
+  background-color: #321830;
+}
+
+.bg-morado {
+  background-color: #30132F;
+}
+
 /*# sourceMappingURL=main.css.map */
