@@ -1,0 +1,67 @@
+//Barra emergente  
+
+.cajas{
+	position: relative;
+	width: 250px;
+	height: 250px;
+	color: #al8a96;
+	background:url('./img/header (4).jpg') center no-repeat ;
+	background-size: cover;
+	border-radius: 28px;
+	overflow: hidden;
+}
+
+.cajas_conten{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 20px;
+	background-color: #fff;
+	border-top-left-radius: 20px;
+	transform: translateY(70px);
+	transition: transform .25s;
+}
+
+.cajas_conten::before{
+	content: '';
+	position: absolute;
+	top: -47px;
+	right: -45px;
+	width: 100px;
+	height: 100px;
+	transform: rotate(-175deg);
+	border-radius: 58%;
+	box-shadow: inset 48px 48px #fff;
+}
+
+.cajas_titu{
+	color: #6A515E;
+	line-height: 15px;
+}
+
+.cajas_sub{
+	display: block;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+
+.cajas_des{
+	font-size: 14px;
+	opacity: 0;
+	transition: opacity .5s;
+
+}
+
+.cajas:hover .cajas_conten{
+	transform: translateY(0);
+}
+
+.cajas:hover .cajas_des{
+	opacity: 1;
+	transition-delay: .25s;
+}
+
+
+
+

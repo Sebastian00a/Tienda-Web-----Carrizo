@@ -24,7 +24,9 @@ header{
 
 body{
 
-	 
+	
+
+
 	background-image: url(../img/istockphoto-1300208115-612x612.png);
 	
 	background-attachment: fixed;
@@ -92,6 +94,8 @@ h1{
 	text-align: center;
 
   }
+
+ 
 
 h3{
 	color: deeppink;
@@ -313,6 +317,8 @@ h3{
 	transform: translateX(-100%);
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.0);
 }
+
+
 
 
 
